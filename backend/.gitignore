@@ -15,7 +15,7 @@ frontend/build/
 frontend/.env
 frontend/.env.local
 
-/Document
+Document/
 
 # IDE
 .vscode/
