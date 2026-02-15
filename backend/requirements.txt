@@ -1,0 +1,25 @@
+# Core Framework
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-dotenv==1.0.1
+
+# Database
+sqlalchemy==2.0.36
+
+# AI/ML
+anthropic==0.39.0
+
+# Scheduling
+apscheduler==3.10.4
+
+# Utilities
+pydantic==2.10.3
+pydantic-core==2.27.1
+python-multipart==0.0.20
+httpx==0.28.1
+
+# Development
+pytest==8.3.4
+pytest-asyncio==0.24.0
+
+email-validator

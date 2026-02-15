@@ -1,0 +1,61 @@
+ai-sutra/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py                 # FastAPI application entry point
+│   │   ├── config.py               # Configuration (API keys, settings)
+│   │   ├── database.py             # Database connection & session
+│   │   ├── models.py               # SQLAlchemy ORM models
+│   │   ├── schemas.py              # Pydantic schemas (request/response)
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── routes/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── auth.py         # User authentication endpoints
+│   │   │   │   ├── onboarding.py   # Interest input & topic creation
+│   │   │   │   ├── feed.py         # Get curated feed
+│   │   │   │   ├── saved.py        # Saved content management
+│   │   │   │   └── settings.py     # User settings
+│   │   ├── agents/
+│   │   │   ├── __init__.py
+│   │   │   ├── master_agent.py     # Parse interests, create topics
+│   │   │   ├── worker_agent.py     # Fetch content per topic
+│   │   │   └── scheduler.py        # APScheduler for periodic jobs
+│   │   └── utils/
+│   │       ├── __init__.py
+│   │       ├── claude_client.py    # Anthropic API wrapper
+│   │       └── helpers.py          # Common utilities
+│   ├── alembic/                    # Database migrations (optional)
+│   ├── requirements.txt
+│   ├── .env.example
+│   └── README.md
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── TopicCard.jsx
+│   │   │   ├── ContentItem.jsx
+│   │   │   ├── InterestInput.jsx
+│   │   │   └── SaveButton.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── CuratedFeed.jsx
+│   │   │   ├── SavedFeed.jsx
+│   │   │   └── Settings.jsx
+│   │   ├── services/
+│   │   │   └── api.js              # API client
+│   │   ├── App.jsx
+│   │   ├── index.js
+│   │   └── index.css
+│   ├── package.json
+│   └── README.md
+│
+├── docs/
+│   ├── architecture.md
+│   └── api_documentation.md
+│
+└── README.md
